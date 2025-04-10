@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+enum EShaderType;
 class FD3D11VertexShader;
 class FD3D11PixelShader;
 class FD3D11Shader;
@@ -19,6 +20,7 @@ public:
     static FD3D11Shader* LoadShaderFromFile(EShaderType ShaderType, const char* FileName, const char* EntryPoint, const char* ShaderName);
 
     /** Return Type Operator
+     * 
      *  Usage: FD3D11VertexShader* MyShader = ShaderManager.GetShader("MyVertexShader");
      */
     UBaseShader GetShader(const FString& ShaderName);

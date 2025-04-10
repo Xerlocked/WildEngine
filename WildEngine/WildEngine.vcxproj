@@ -117,7 +117,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -135,266 +135,19 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Runtime\Core\Core.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Math\Box.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Math\Color.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Math\Matrix\Matrix.cpp">
-      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <Optimization>Disabled</Optimization>
-      <SupportJustMyCode>true</SupportJustMyCode>
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <EnableVectorLength>NotSet</EnableVectorLength>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>false</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
-      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>x64\Debug\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>Platform.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>x64\Debug\WildEngine.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>x64\Debug\WildEngine.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\WildEngine\WildEngine\Source\Editor\;D:\WildEngine\WildEngine\Source\Runtime\Core;D:\WildEngine\WildEngine\Source\Runtime\CoreUObject;D:\WildEngine\WildEngine\Source\Runtime\Engine;D:\WildEngine\WildEngine\Source\Runtime\Engine\Classes;D:\WildEngine\WildEngine\Source\Runtime\InputCore;D:\WildEngine\WildEngine\Source\Runtime\InteractiveTool;D:\WildEngine\WildEngine\Source\Runtime\Launch;D:\WildEngine\WildEngine\Source\Runtime\Renderer;D:\WildEngine\WildEngine\Source\Runtime\RHI;D:\WildEngine\WildEngine\Source\Runtime\Windows;D:\WildEngine\WildEngine\Source\ThirdParty;</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
-    <ClCompile Include="Source\Runtime\Core\Math\UnrealMath.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Math\Vector.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Misc\DataTime.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Misc\EngineStatistics.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Misc\Guid.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Misc\Timer.cpp">
-      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <Optimization>Disabled</Optimization>
-      <SupportJustMyCode>true</SupportJustMyCode>
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>D:\WildEngine\Intermediate\Build\x64\Debug\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>D:\WildEngine\Intermediate\Build\x64\Debug\</BrowseInformationFile>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <EnableVectorLength>NotSet</EnableVectorLength>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>false</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>D:\WildEngine\Intermediate\Build\x64\Debug\</ModuleDependenciesFile>
-      <ModuleOutputFile>D:\WildEngine\Intermediate\Build\x64\Debug\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>D:\WildEngine\Intermediate\Build\x64\Debug\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>D:\WildEngine\Intermediate\Build\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>Platform.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>D:\WildEngine\Intermediate\Build\x64\Debug\WildEngine.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>D:\WildEngine\Intermediate\Build\x64\Debug\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>D:\WildEngine\Intermediate\Build\x64\Debug\WildEngine.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>D:\WildEngine\Intermediate\Build\x64\Debug\</XMLDocumentationFileName>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\WildEngine\WildEngine\Source\Editor\;D:\WildEngine\WildEngine\Source\Runtime\Core;D:\WildEngine\WildEngine\Source\Runtime\CoreUObject;D:\WildEngine\WildEngine\Source\Runtime\Engine;D:\WildEngine\WildEngine\Source\Runtime\Engine\Classes;D:\WildEngine\WildEngine\Source\Runtime\InputCore;D:\WildEngine\WildEngine\Source\Runtime\InteractiveTool;D:\WildEngine\WildEngine\Source\Runtime\Launch;D:\WildEngine\WildEngine\Source\Runtime\Graphics;D:\WildEngine\WildEngine\Source\Runtime\Graphics\Renderer;D:\WildEngine\WildEngine\Source\Runtime\RHI;D:\WildEngine\WildEngine\Source\Runtime\Windows;D:\WildEngine\WildEngine\Source\ThirdParty;</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
-    <ClCompile Include="Source\Runtime\Core\Misc\TimeSpan.cpp" />
-    <ClCompile Include="Source\Runtime\Core\Stats\Stat.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\CameraComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\CubeComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\LineComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\PrimitiveComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\SceneComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\SphereComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Classes\Components\TriangleComponent.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\Level.cpp" />
-    <ClCompile Include="Source\Runtime\Engine\World.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Misc\Timer.cpp" />
     <ClCompile Include="Source\Runtime\Graphics\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\Runtime\Graphics\Shader\BaseShader.cpp" />
     <ClCompile Include="Source\Runtime\Graphics\Shader\ShaderManager.cpp" />
-    <ClCompile Include="Source\Runtime\InteractiveTool\GizmoComponent.cpp" />
     <ClCompile Include="Source\Runtime\Launch\LaunchEngineLoop.cpp" />
-    <ClCompile Include="Source\Runtime\Launch\Launch.cpp">
-      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <Optimization>Disabled</Optimization>
-      <SupportJustMyCode>true</SupportJustMyCode>
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <EnableVectorLength>NotSet</EnableVectorLength>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>false</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
-      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>x64\Debug\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>x64\Debug\WildEngine.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>x64\Debug\WildEngine.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\WildEngine\WildEngine\Engine;D:\WildEngine\WildEngine\Core;</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
-    <ClCompile Include="Source\Runtime\Windows\D3D11RHI\D3D11RHI.cpp" />
+    <ClCompile Include="Source\Runtime\Launch\Launch.cpp" />
     <ClCompile Include="Source\Runtime\Windows\Window.cpp" />
     <ClCompile Include="Source\ThirdParty\ImGui\imgui.cpp" />
     <ClCompile Include="Source\ThirdParty\ImGui\imgui_demo.cpp" />
@@ -407,72 +160,27 @@
   <ItemGroup>
     <Folder Include="Content\Data\" />
     <Folder Include="Content\Editor\Slate\Icons\" />
+    <Folder Include="Shaders\" />
+    <Folder Include="Source\Runtime\Core\GenericPlatform\" />
+    <Folder Include="Source\Runtime\Core\Math\Matrix\" />
+    <Folder Include="Source\Runtime\Core\Stats\" />
+    <Folder Include="Source\Runtime\Engine\Classes\Components\" />
+    <Folder Include="Source\Runtime\InteractiveTool\" />
+    <Folder Include="Source\Runtime\RHI\" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Editor\UnrealEd\ObjImporter.h" />
-    <ClInclude Include="Source\Runtime\Core\Class.h" />
-    <ClInclude Include="Source\Runtime\Core\Core.h" />
-    <ClInclude Include="Source\Runtime\Core\CorePrivate.h" />
-    <ClInclude Include="Source\Runtime\Core\GenericPlatform\GenericPlatformMath.h" />
     <ClInclude Include="Source\Runtime\Core\HAL\Platform.h" />
-    <ClInclude Include="Source\Runtime\Core\HAL\PlatformIncludes.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Axis.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Box.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Color.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\ClipProjectionMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\InverseRotationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\Matrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\MirrorMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\OrthoMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\PerspectiveMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\QuatRotationTranslationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\RotationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\RotationTranslationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\ScaleMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\ScaleRotationTranslationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Matrix\TranslationMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Plane.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Quat.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Rotator.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Sphere.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Transform.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\UnrealMath.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\UnrealMathFPU.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\UnrealMathUtility.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\UnrealMathVectorConstants.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\UnrealMatrix.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Vector.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Vector2D.h" />
-    <ClInclude Include="Source\Runtime\Core\Math\Vector4.h" />
-    <ClInclude Include="Source\Runtime\Core\Misc\DataTime.h" />
-    <ClInclude Include="Source\Runtime\Core\Misc\EngineStatistics.h" />
-    <ClInclude Include="Source\Runtime\Core\Misc\Guid.h" />
     <ClInclude Include="Source\Runtime\Core\Misc\Timer.h" />
-    <ClInclude Include="Source\Runtime\Core\Misc\TimeSpan.h" />
-    <ClInclude Include="Source\Runtime\Core\Stats\Stat.h" />
     <ClInclude Include="Source\Runtime\Core\Templates\CommonTypes.h" />
     <ClInclude Include="Source\Runtime\Core\Templates\UnrealTypes.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\CameraComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\CubeComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\LineComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\PrimitiveComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\SceneComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\SphereComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Classes\Components\TriangleComponent.h" />
-    <ClInclude Include="Source\Runtime\Engine\Level.h" />
-    <ClInclude Include="Source\Runtime\Engine\PixelFormat.h" />
-    <ClInclude Include="Source\Runtime\Engine\World.h" />
     <ClInclude Include="Source\Runtime\Graphics\GraphicType.h" />
     <ClInclude Include="Source\Runtime\Graphics\Renderer\Renderer.h" />
     <ClInclude Include="Source\Runtime\Graphics\Shader\BaseShader.h" />
     <ClInclude Include="Source\Runtime\Graphics\Shader\ShaderManager.h" />
-    <ClInclude Include="Source\Runtime\InteractiveTool\GizmoComponent.h" />
     <ClInclude Include="Source\Runtime\Launch\LaunchEngineLoop.h" />
-    <ClInclude Include="Source\Runtime\RHI\RHI.h" />
-    <ClInclude Include="Source\Runtime\RHI\RHIResources.h" />
     <ClInclude Include="Source\Runtime\Windows\D3D11RHI\D3D11Resources.h" />
     <ClInclude Include="Source\Runtime\Windows\D3D11RHI\D3D11RHI.h" />
-    <ClInclude Include="Source\Runtime\Windows\D3D11RHI\D3D11RHIBase.h" />
     <ClInclude Include="Source\Runtime\Windows\D3D11RHI\D3D11Shader.h" />
     <ClInclude Include="Source\Runtime\Windows\D3D11RHI\D3D11State.h" />
     <ClInclude Include="Source\Runtime\Windows\Window.h" />
@@ -487,19 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Source\ThirdParty\SimpleJSON\API.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="Shaders\ShaderW0.hlsl">
-      <ObjectFileOutput>D:\WildEngine\x64\Debug\%(Filename).cso</ObjectFileOutput>
-      <TrackerLogDirectory>x64\Debug\WildEngine.tlog\</TrackerLogDirectory>
-      <EntryPointName>main</EntryPointName>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ShaderModel>4.0_level_9_3</ShaderModel>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <DisableOptimizations>true</DisableOptimizations>
-      <EnableDebuggingInformation>true</EnableDebuggingInformation>
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </FxCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

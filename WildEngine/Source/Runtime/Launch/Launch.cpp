@@ -1,5 +1,4 @@
 ﻿#include "LaunchEngineLoop.h"
-#include <memory>
 
 int main(int argc, char** argv)
 {

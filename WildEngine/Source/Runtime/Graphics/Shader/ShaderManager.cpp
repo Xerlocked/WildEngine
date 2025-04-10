@@ -31,7 +31,7 @@ void FShaderManager::Release() const
 FD3D11Shader* FShaderManager::LoadShaderFromFile(EShaderType ShaderType, const char* FileName, const char* EntryPoint,
     const char* ShaderName)
 {
-    
+    return nullptr;
 }
 
 UBaseShader FShaderManager::GetShader(const FString& ShaderName)

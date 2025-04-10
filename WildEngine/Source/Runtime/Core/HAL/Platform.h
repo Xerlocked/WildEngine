@@ -36,11 +36,11 @@ struct FWindowsPlatformTypes
 typedef char ANSICHAR;
 typedef wchar_t WIDECHAR;
 
-#if USE_WIDECHAR
-typedef WIDECHAR TCHAR;
-#else
-typedef ANSICHAR TCHAR;
-#endif
+// #if USE_WIDECHAR
+// typedef WIDECHAR TCHAR;
+// #else
+// typedef ANSICHAR TCHAR;
+// #endif
 
 
 // Unsigned base types.

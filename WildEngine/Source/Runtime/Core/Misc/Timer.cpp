@@ -1,7 +1,5 @@
 ﻿#include "Timer.h"
-
-#include <algorithm>
-#include "Class.h"
+#include <Window.h>
 
 Timer::Timer()
 {
@@ -68,7 +66,7 @@ void Timer::Tick()
 
     PreviousTime = CurrentTime;
 
-    DeltaTime = std::max(DeltaTime, 0.0f);
+    DeltaTime = (DeltaTime > 0.0f) ? DeltaTime : 0.0f;
 }
 
 float Timer::GetDeltaTime() const

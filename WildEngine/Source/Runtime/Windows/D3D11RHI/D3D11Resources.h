@@ -2,6 +2,7 @@
 #include <d3d11.h>
 #include "D3D11Shader.h"
 #include "GraphicType.h"
+#include "HAL/Platform.h"
 
 class FD3D11VertexShader : public FD3D11Shader
 {
